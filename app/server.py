@@ -9,10 +9,45 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://dl.dropboxusercontent.com/s/kls6k7nnb1bslmm/resnet-50-stage-2-2020-04-13.pkl'
+export_file_name = 'resnet-50-stage-2-2020-04-13.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['anthem',
+  'apex_legends',
+  'borderlands_3',
+  'call_of_duty_modern_warfare_2019',
+  'civilization_6',
+  'days_gone',
+  'destiny_2',
+  'dota_2',
+  'fifa_20',
+  'fortnite',
+  'grand_theft_auto_v',
+  'hearthstone',
+  'kingdom_hearts_iii',
+  'league_of_legends',
+  'luigi’s_mansion_3',
+  'madden_nfl_20',
+  'mario_kart_8',
+  'minecraft',
+  'monster_hunter_world',
+  'mortal_kombat_11',
+  'nba_2k20',
+  'new_super_mario_bros_u_deluxe',
+  'playerunknown’s_battlegrounds',
+  'rainbow_six_siege',
+  'red_dead_redemption_ii',
+  'resident_evil_2_2019',
+  'sekiro_shadows_die_twice',
+  'star_wars_jedi_fallen_order',
+  'super_smash_bros_ultimate',
+  'the_elder_scrolls_online',
+  'the_outer_worlds',
+  'tom_clancy_the_division_2',
+  'total_war_three_kingdoms',
+  'untitled_goose_game',
+  'warframe']
+
 path = Path(__file__).parent
 
 app = Starlette()
